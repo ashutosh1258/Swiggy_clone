@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Swiggy Homepage</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #ff5000;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h2 {
+            margin: 0;
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .main {
+            background-color: #ff5000;
+            color: white;
+            text-align: center;
+            padding: 25px 20px;
+        }
+
+        .main h1 {
+            font-size: 30px;
+        }
+
+        .main input {
+            padding: 12px;
+            width: 250px;
+            border: none;
+            border-radius: 8px;
+            margin: 5px;
+        }
+
+        .services {
+            background-color: #ff5000;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 15px 20px 30px;
+        }
+
+        .card {
+            background-color: white;
+            color: #333;
+            width: 200px;
+            height: 140px;
+            padding: 15px;
+            border-radius: 20px;
+        }
+
+        .card h3 {
+            margin-bottom: 5px;
+        }
+
+        .card p {
+            color: gray;
+            font-size: 14px;
+        }
+
+        .card button {
+            background-color: #ff5000;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+
+        .categories {
+            padding: 25px 8%;
+        }
+
+        .food-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .food {
+            text-align: center;
+            width: 100px;
+        }
+
+        .food img {
+            width: 85px;
+            height: 75px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .food p {
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                padding: 15px;
+            }
+
+            .header a {
+                margin-left: 8px;
+                font-size: 12px;
+            }
+
+            .main h1 {
+                font-size: 23px;
+            }
+
+            .main input {
+                width: 80%;
+            }
+
+            .services {
+                flex-wrap: wrap;
+            }
+
+            .card {
+                width: 200px;
+            }
+
+            .food-container {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h2> Swiggy</h2>
+
+        <div>
+            <a href="#">Corporate</a>
+            <a href="#">Partner</a>
+            <a href="#">Sign in</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <h1>Order food & groceries.<br>
+            Discover best restaurants. Swiggy it!</h1>
+
+        <input type="text" placeholder="Enter your delivery location">
+        <input type="text" placeholder="Search for restaurant, item or more">
+    </div>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>FOOD DELIVERY</h3>
+            <p>FROM RESTAURANTS</p>
+            <p>UPTO 60% OFF</p>
+            <button>➜</button>
+        </div>
+
+        <div class="card">
+            <h3>INSTAMART</h3>
+            <p>INSTANT GROCERY</p>
+            <p>UPTO 60% OFF</p>
+            <button>➜</button>
+        </div>
+
+        <div class="card">
+            <h3>DINEOUT</h3>
+            <p>EAT OUT & SAVE MORE</p>
+            <p>UPTO 50% OFF</p>
+            <button>➜</button>
+        </div>
+
+    </div>
+
+    <div class="categories">
+        <h3>Order our best food options</h3>
+
+        <div class="food-container">
+
+            <div class="food">
+                <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=200" alt="North Indian food">
+                <p>North Indian</p>
+            </div>
+
+            <div class="food">
+                <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?w=200" alt="Pizza">
+                <p>Pizza</p>
+            </div>
+
+            <div class="food">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=200" alt="Burger">
+                <p>Burger</p>
+            </div>
+
+            <div class="food">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=200" alt="Cake">
+                <p>Cake</p>
+            </div>
+
+            <div class="food">
+                <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=200" alt="Biryani">
+                <p>Biryani</p>
+            </div>
+
+            <div class="food">
+                <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=200" alt="Desserts">
+                <p>Desserts</p>
+            </div>
+
+            <div class="food">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=200" alt="Coffee">
+                <p>Coffee</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
